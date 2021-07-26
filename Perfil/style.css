@@ -1,0 +1,118 @@
+.fotos{
+    border-radius: 50%;
+    width: 6%;
+    margin-left: 2.5%;
+    margin-top: 2.5%;
+    cursor: pointer;
+}
+
+.modal-container{
+    display: inline-block;
+    position: relative;
+    transition: 1.5s;
+}
+
+.card{
+    z-index: 0;
+}
+.modal-container.active{
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 1.5s;
+}
+
+.modal-container img{
+    z-index: 1;
+}
+
+.modal-container.active img{
+    z-index: 1;
+    width: 30%;
+}
+
+.modal-container.active::after{
+    content: '';
+    position: fixed; 
+    width: 200vw;
+    height: 200vh;
+    top: 0;
+    left: 0;
+    
+    background-color: rgba(0, 0, 0, 0.56);
+    z-index: 0;
+
+}
+
+
+
+.prueba, .prueba2, .prueba3{
+    cursor: pointer;
+    transition: all 0.5s;
+    color: grey;
+    margin-bottom: 50px;
+    
+    
+}
+
+.agregar{
+
+    cursor: pointer;
+    color: black;
+    font-family: "Arial Black";
+    
+
+    
+}
+
+.agregarCuadrado {
+    border-radius: 25%;
+    padding: 5%;
+    background-color: blue;
+    color: white;
+    transition: 0.5s;
+}
+
+/*.wrap{
+    width: 90%;
+    max-width: 1000px;
+}
+
+.widget{
+    width: 40%;
+    margin: 2em;
+}*/
+
+.widget p{
+    display: inline-block;
+    line-height: 1em;
+    margin-top: -20px;
+}
+
+.fecha{
+    position: static;
+    font-family: Oswald, Arial;
+    font-size: small;
+    margin-bottom: 0.3125rem;
+    padding: 20px;
+    width: 100%;
+}
+
+
+
+.reloj p{
+    color: grey;
+    display: inline-block;
+    line-height: 1em;
+    font-family: Oswald, Arial;
+    margin-top: 0px;
+    
+}
+
+
+.linea{
+    display: inline-flex;
+}
